@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - MasterSchedule</title>
+    <style>
+        :root {
+            --primary-color: #007AFF;
+            --secondary-color: #5856D6;
+            --text-color: #333;
+            --light-bg: #f5f5f7;
+            --border-radius: 12px;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 20px 0;
+        }
+        
+        .app-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 20px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: var(--text-color);
+            margin-bottom: 10px;
+            font-size: 2.2em;
+        }
+        
+        .subtitle {
+            color: #666;
+            font-size: 1.1em;
+        }
+        
+        section {
+            margin-bottom: 30px;
+        }
+        
+        h2 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+        
+        .contact-options {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .contact-card {
+            background: var(--light-bg);
+            padding: 20px;
+            border-radius: var(--border-radius);
+            border-left: 4px solid var(--primary-color);
+        }
+        
+        .contact-card h3 {
+            margin-bottom: 10px;
+            color: var(--secondary-color);
+        }
+        
+        .faq-item {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+        
+        .faq-question {
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-color);
+        }
+        
+        .faq-answer {
+            color: #666;
+        }
+        
+        .button {
+            display: inline-block;
+            background: var(--primary-color);
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: var(--border-radius);
+            font-weight: 500;
+            transition: background 0.2s;
+        }
+        
+        .button:hover {
+            background: #0056CC;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            color: #999;
+            font-size: 0.9em;
+        }
+        
+        @media (min-width: 768px) {
+            .contact-options {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="app-icon" style="background: linear-gradient(135deg, #{$primary-color}, #{$secondary-color});"></div>
+        <h1>[Your App Name] Support</h1>
+        <p class="subtitle">We're here to help you get the most out of our app</p>
+    </header>
+
+    <section>
+        <h2>📧 Contact Support</h2>
+        <p>Need help? Choose the best way to reach us:</p>
+        
+        <div class="contact-options">
+            <div class="contact-card">
+                <h3>Email Support</h3>
+                <p>For detailed questions and account issues</p>
+                <p><strong>Email:</strong> <a href="mailto:support@yourapp.com">support@yourapp.com</a></p>
+                <p>Response time: Within 24 hours</p>
+            </div>
+            
+            <div class="contact-card">
+                <h3>Report a Bug</h3>
+                <p>Found an issue? Let us know!</p>
+                <p>Please include: Device model, iOS version, and steps to reproduce</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>❓ Frequently Asked Questions</h2>
+        
+        <div class="faq-item">
+            <div class="faq-question">How do I create an account?</div>
+            <div class="faq-answer">Open the app and tap "Sign Up." Enter your email, create a password, and follow the verification steps.</div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">I forgot my password. How can I reset it?</div>
+            <div class="faq-answer">Tap "Forgot Password" on the login screen. Enter your email, and we'll send you a password reset link.</div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">Is my data secure and private?</div>
+            <div class="faq-answer">Yes! We use industry-standard encryption and comply with privacy regulations. We never share your data with third parties.</div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">How do I cancel my subscription?</div>
+            <div class="faq-answer">You can manage your subscription through the App Store. Go to Settings → [Your Name] → Subscriptions → [Your App Name].</div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">Does the app work offline?</div>
+            <div class="faq-answer">Basic features are available offline. Some functionality requires an internet connection for data synchronization.</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>📱 App Information</h2>
+        <p><strong>Version:</strong> 1.0.0</p>
+        <p><strong>Last Updated:</strong> [Date]</p>
+        <p><strong>Compatibility:</strong> iOS 15.0 or later</p>
+        <p><strong>Privacy Policy:</strong> <a href="https://yourapp.com/privacy">https://yourapp.com/privacy</a></p>
+        <p><strong>Terms of Service:</strong> <a href="https://yourapp.com/terms">https://yourapp.com/terms</a></p>
+    </section>
+
+    <footer>
+        <p>© 2024 [Your Company Name]. All rights reserved.</p>
+    </footer>
+</body>
+</html>
